@@ -1,19 +1,3 @@
-/*!
- * vent - v0.1.0
- * I wanted to create an eventing system that was a little bit more 'tracable'.
- * Because of the way I like to organise my event names "fetch stick", and I wanted
- * my handlers to be as flexible and take away as much of the logic as possible
- * i.e. be more generic, I wanted to pass through the "caller" of the event too.
- * I've added a o.seperator so you can just as easily do "fetch/stick" or "fetch:stick"
- *
- * This makes it very easy to collected "fetch[es]" as it were.
- * "fetch stick", "fetch ball", "fetch beer" can all trigger "fetch" within the handler
- *
- * Events are scoped, meaning that you can garbage collect when a window closes
- * if you're eventing from within frames.
- *
- */
- 
  // @TODO Write e.single() = limted listener. A single() is an event name that cannot have more than one listener attached to it. New events overwrite.
  // @TODO Write e.once() = limted listener. A once() is an event whose function is called only once. Once the function is called, it is removed and cannot be accessed again.
  // @TODO Comb through to remain consistant in naming conventions currently e / _name - pick one
